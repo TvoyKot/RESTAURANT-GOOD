@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close"><img src="images/svgElements/close-icon.svg" alt="icon"></a>
+                <a href="#" class="popup__logo"><img src="images/svgElements/logo.svg" alt="logo"></a>
+                <p class="popup__title">Забронировать столик</p>
+                <form class="popup__form">
+                    <input type="text" class="popup__form-input" placeholder="Имя">
+                    <input type="text" class="popup__form-input" placeholder="Телефон">
+                    <div class="popup__form-box">
+                        <input type="text" class="popup__form-input" placeholder="Гостей">
+                        <input type="text" class="popup__form-input" placeholder="Время">
+                    </div>
+                </form>
+                <button  class="popup__button">Забронировать</button>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__inner">
+            <div class="menu__slide">
+                <div class="menu__slide-top">
+                    <a href="index.html" class="logo">
+                        <img src="images/svgElements/logo.svg" alt="logo-icon">
+                    </a>
+                    <div class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <nav class="menu__phone">
+                    <ul class="menu__phone-list">
+                        <li class="menu__phone-item">
+                            <a href="delivery.html" class="menu__phone-link">Меню</a>
+                        </li>
+                        <li class="menu__phone-item">
+                            <a href="#" class="menu__phone-link">Доставка</a>
+                        </li>
+                        <li class="menu__phone-item">
+                            <a href="#" class="menu__phone-link">Оплата</a>
+                        </li>
+                    </ul>
+                    <a href="#popup"  class="menu__popup popup__link">Бронь столика</a>
+                </nav>
+                <div class="menu__slide-bottom">
+                    <ul class="menu__slide-list">
+                        <li class="menu__slide-item">
+                            <a href="#" class="menu__slide-link">
+                                <svg class="svg-youtube-icon-dims">
+                                    <use xlink:href="images/sprite.svg#youtube-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu__slide-item">
+                            <a href="#" class="menu__slide-link">
+                                <svg class="svg-vk-icon-dims">
+                                    <use xlink:href="images/sprite.svg#vk-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu__slide-item">
+                            <a href="#" class="menu__slide-link">
+                                <svg class="svg-telegram-icon-dims">
+                                    <use xlink:href="images/sprite.svg#telegram-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="meni__list-item">
+                        <a href="delivery.html" class="menu__list-link">Меню</a>
+                    </li>
+                    <li class="meni__list-item">
+                        <a href="#" class="menu__list-link">Доставка</a>
+                    </li>
+                    <li class="meni__list-item">
+                        <a href="#" class="menu__list-link">Оплата</a>
+                    </li>
+                </ul>
+                <button class="menu__popup">Бронь столика</button>
+            </nav>
+            <h1 class="header__title">Видовой ресторан <br>Food Exxe Relo <br> на Крестовском <br> острове</h1>
+        </div>
+    </header>
+   <main class="main">
+          <section class="about">
+            <div class="container">
+                <h5 class="about__title title">о ресторане</h5>
+                <div class="about__content">
+                    <h3 class="about__content-title">Food Exxe Relo</h3>
+                    <p class="about__content-text">Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In lectus
+                        phasellus non ornare eget velit. Facilisi urna, tristique dui, rhoncus, dolor. Tincidunt enim
+                        gravida dignissim leo pulvinar sit volutpat nulla vestibulum.
+                        Morbi pellentesque enim massa laoreet vel id. Lectus ac, facilisis neque turpis. Morbi massa
+                        enim nullam sem vehicula. Amet quis pellentesque enim porttitor lectus interdum. Nisi, faucibus
+                        pharetra at porttitor. Fringilla luctus pretium in viverra. In adipiscing tempor amet malesuada
+                        ullamcorper ut sagittis. Dui, scelerisque vulputate risus massa dictum. Cras at quis in eu,
+                        faucibus feugiat vel. At.</p>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section">
+            <div class="container">
+                <h5 class="menu-section__title title">Меню</h5>
+                <div class="menu-section__top">
+                    <h3 class="menu-section__top-title">Меню</h3>
+                    <p class="menu-section__top-text">At faucibus nullam mauris vitae ut non. Augue libero non nibh nec,
+                        et eget erat. Nascetur nunc neque, varius massa aliquam interdum turpis massa. Ac tortor aliquam
+                        risus, interdum nisl mauris sit. Ut placerat fermentum pellentesque ac at. Vitae venenatis
+                        faucibus urna mi eget vitae quam eu. Euismod sed mauris id turpis iaculis. Erat rutrum dolor,
+                        vitae morbi.
+                        Nunc cras cras aliquet blandit faucibus massa sagittis semper. </p>
+                </div>
+                <div class="menu-section__bottom">
+                    <div class="menu-section__bottom-box">
+                        <img src="images/menu-section/1.jpg" alt="image" class="menu-section__bottom-img">
+                        <p class="menu-section__bottom-text">Основное меню</p>
+                    </div>
+                    <div class="menu-section__bottom-box">
+                        <img src="images/menu-section/2.jpg" alt="image" class="menu-section__bottom-img">
+                        <p class="menu-section__bottom-text">Барная карта</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="container">
+                <h5 class="delivery__title title">доставка</h5>
+                <div class="delivery__content">
+                    <h3 class="delivery__content-title">Служба <br>
+                        доставки</h3>
+                    <div class="delivery__content-box">
+                        <p class="delivery__content-box-text">Phasellus diam, ultrices lobortis integer et. Diam, purus
+                            vel sagittis, non, a. In risus, venenatis enim vitae mauris aliquet orci. Consectetur nibh
+                            interdum nullam ut lobortis eu etiam sem. Et in vitae pellentesque non, lectus orci natoque
+                            faucibus suspendisse. Semper aliquam id et ultrices velit donec lacus. In odio sit nibh
+                            volutpat cras placerat sit feugiat dignissim. Rutrum et suspendisse tortor, lobortis
+                            eleifend in fringilla. Egestas cursus imperdiet cursus dui, nulla id massa. Hendrerit nam
+                            enim semper porttitor imperdiet diam semper. Nulla sit etiam cras morbi enim elementum
+                            euismod sapien.</p>
+                        <a href="#" class="delivery__content-box-link">Подробнее</a>
+                        <a href="#" class="delivery__content-box-link">Условия доставки</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <h5 class="contacts__title title">контакты</h5>
+                    <div class="contacts__content">
+                        <div class="contacts__box">
+                            <div class="contacts__box-item">
+                                <p class="contacts__box-text"><span>2
+                                    </span>мин</p>
+                                <span>из центра <br> Санкт-Петербурга</span>
+                            </div>
+                            <div class="contacts__box-item">
+                                <p class="contacts__box-text"><span>12</span>
+                                    мин</p>
+                                <span>из города <br> Зеленогорск</span>
+                            </div>
+                            <div class="contacts__box-item">
+                                <p class="contacts__box-text"><span>42</span>
+                                    мин</p>
+                                <span>из аэропорта <br> Пулково</span>
+                            </div>
+                            <div class="contacts__box-item">
+                                <p class="contacts__box-text"><span>52</span>
+                                    мин</p>
+                                <span>из города <br> Павловск</span>
+                            </div>
+                        </div>
+                        <div class="contacts__box-img">
+                            <div class="contacts__info">
+                                <div class="contacts__info-top">
+                                    <a href="#" class="contacts__info-top-link">Санкт-Петербург,
+                                        Северная дорога, 11 </a>
+                                    <a href="tel:+79217777777" class="contacts__info-top-link">+7 (921) 777-77-77</a>
+                                </div>
+                                <p class="contacts__info-timework">Время работы</p>
+                                <p class="contacts__info-text"><span>Вск-Чт</span>с 12:00 до 23:00</p>
+                                <p class="contacts__info-text"><span>Пт-Сб</span>с 12:00 до 03:00</p>
+                                <div class="contacts__info-bottom">
+                                    <button class="menu__popup popup__link">Бронь столика</button>
+                                    <button class="ask-question">Задать вопрос</button>
+                                </div>
+                            </div>
+                            <img src="images/contacts/map.jpg" alt="map" class="contacts__img"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="logo">
+                <img src="images/svgElements/logo.svg" alt="logo">
+            </a>
+            <a class="footer__politicy" href="#">Политика конфиденциальности</a>
+            <p class="footer__designer">Дизайн d-e-n.ru</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

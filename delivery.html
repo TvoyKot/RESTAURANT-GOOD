@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close"><img src="images/svgElements/close-icon.svg" alt="icon"></a>
+                <a href="#" class="popup__logo"><img src="images/svgElements/logo.svg" alt="logo"></a>
+                <p class="popup__title">Забронировать столик</p>
+                <form class="popup__form">
+                    <input type="text" class="popup__form-input" placeholder="Имя">
+                    <input type="text" class="popup__form-input" placeholder="Телефон">
+                    <div class="popup__form-box">
+                        <input type="text" class="popup__form-input" placeholder="Гостей">
+                        <input type="text" class="popup__form-input" placeholder="Время">
+                    </div>
+                </form>
+                <button  class="popup__button">Забронировать</button>
+            </div>
+        </div>
+    </div>
+    <header class="header-user">
+        <div class="menu__slide">
+            <div class="menu__slide-top">
+                <a href="index.html" class="logo">
+                    <img src="images/svgElements/logo.svg" alt="logo-icon">
+                </a>
+                <div class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="menu__phone">
+                <ul class="menu__phone-list">
+                    <li class="menu__phone-item">
+                        <a href="delivery.html" class="menu__phone-link">Меню</a>
+                    </li>
+                    <li class="menu__phone-item">
+                        <a href="#" class="menu__phone-link">Доставка</a>
+                    </li>
+                    <li class="menu__phone-item">
+                        <a href="#" class="menu__phone-link">Оплата</a>
+                    </li>
+                </ul>
+                <a href="#popup"  class="menu__popup popup__link">Бронь столика</a>
+            </nav>
+            <div class="menu__slide-bottom">
+                <ul class="menu__slide-list">
+                    <li class="menu__slide-item">
+                        <a href="#" class="menu__slide-link">
+                            <svg class="svg-youtube-icon-dims">
+                                <use xlink:href="images/sprite.svg#youtube-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu__slide-item">
+                        <a href="#" class="menu__slide-link">
+                            <svg class="svg-vk-icon-dims">
+                                <use xlink:href="images/sprite.svg#vk-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu__slide-item">
+                        <a href="#" class="menu__slide-link">
+                            <svg class="svg-telegram-icon-dims">
+                                <use xlink:href="images/sprite.svg#telegram-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__top">
+                <nav class="user-nav">
+                    <ul class="user__list">
+                        <li class="user__list-item">
+                            <a href="#" class="user__list-link">Личный кабинет</a>
+                        </li>
+                        <li class="user__list-item">
+                            <a href="#" class="user__list-link"><img src="images/svgElements/user-icon.svg"
+                                    alt="icon"></a>
+                        </li>
+                        <li class="user__list-item">
+                            <a href="#" class="user__list-link"><img src="images/svgElements/shopbag-icon.svg"
+                                    alt="icon"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="product">
+                <div class="product__inner">
+                    <div class="product__tabs">
+                        <a href="#" class="product__tab product__tab--active" data-filter=".breakfast">Завтраки </a>
+                        <a href="#" class="product__tab" data-filter=".raw">Raw</a>
+                        <a href="#" class="product__tab" data-filter=".t3">Холодные закуски</a>
+                        <a href="#" class="product__tab" data-filter=".t4">Брускетты</a>
+                        <a href="#" class="product__tab" data-filter=".t5">К вину</a>
+                        <a href="#" class="product__tab" data-filter=".t6">Салаты</a>
+                        <a href="#" class="product__tab" data-filter=".t7">Супы</a>
+                        <a href="#" class="product__tab" data-filter=".t8">Паста и ризотто</a>
+                        <a href="#" class="product__tab" data-filter=".t9">Мясо</a>
+                        <a href="#" class="product__tab" data-filter=".t10">Рыба</a>
+                        <a href="#" class="product__tab" data-filter=".t11">Grill</a>
+                        <a href="#" class="product__tab" data-filter=".t12">Мангал</a>
+                        <a href="#" class="product__tab" data-filter=".t13">Гарниры</a>
+                    </div>
+                    <div class="product__inner">
+                        <div class="product__items mix breakfast">
+                            <div class="product__item ">
+                                <img src="images/product/1.png" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/2.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/3.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/5.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/6.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/7.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/8.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/9.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix raw">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t3">
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t4">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t5">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t6">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t7">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t8">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t9">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t10">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t11">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t12">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/4.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__items mix t13">
+                            <div class="product__item">
+                                <img src="images/product/10.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <img src="images/product/11.jpg" alt="product" class="product__item-img">
+                                <div class="product__item-content">
+                                    <a class="product__item-title" href="card.html">Яичница-глазунья из трех яиц</a>
+                                    <div class="product__item-bottom">
+                                        <div class="product__item-price">250 ₽</div>
+                                        <button class="product__item-btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <h5 class="contacts__title title">контакты</h5>
+                    <div class="contacts__content">
+                        <div class="contacts__box">
+                            <div class="contacts__box-item">
+                                <p class="contacts__box-text"><span>2
+                                    </span>мин</p>
+                                <span>из центра <br> Санкт-Петербурга</span>
+                            </div>
+                            <div class="contacts__box-item">
+                                <p class="contacts__box-text"><span>12</span>
+                                    мин</p>
+                                <span>из города <br> Зеленогорск</span>
+                            </div>
+                            <div class="contacts__box-item">
+                                <p class="contacts__box-text"><span>42</span>
+                                    мин</p>
+                                <span>из аэропорта <br> Пулково</span>
+                            </div>
+                            <div class="contacts__box-item">
+                                <p class="contacts__box-text"><span>52</span>
+                                    мин</p>
+                                <span>из города <br> Павловск</span>
+                            </div>
+                        </div>
+                        <div class="contacts__box-img">
+                            <div class="contacts__info">
+                                <div class="contacts__info-top">
+                                    <a href="#" class="contacts__info-top-link">Санкт-Петербург,
+                                        Северная дорога, 11 </a>
+                                    <a href="tel:+79217777777" class="contacts__info-top-link">+7 (921) 777-77-77</a>
+                                </div>
+                                <p class="contacts__info-timework">Время работы</p>
+                                <p class="contacts__info-text"><span>Вск-Чт</span>с 12:00 до 23:00</p>
+                                <p class="contacts__info-text"><span>Пт-Сб</span>с 12:00 до 03:00</p>
+                                <div class="contacts__info-bottom">
+                                    <button class="menu__popup popup__link">Бронь столика</button>
+                                    <button class="ask-question">Задать вопрос</button>
+                                </div>
+                            </div>
+                            <img src="images/contacts/map.jpg" alt="map" class="contacts__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="logo">
+                    <img src="images/svgElements/logo.svg" alt="logo">
+                </a>
+                <a class="footer__politicy" href="#">Политика конфиденциальности</a>
+                <div class="footer__pay">
+                    <img src="images/svgElements/visa.svg" alt="icon-pay" class="footer__pay-img">
+                    <img src="images/svgElements/mir.svg" alt="icon-pay" class="footer__pay-img">
+                    <img src="images/svgElements/mastercard.svg" alt="icon-pay" class="footer__pay-img">
+                </div>
+                <p class="footer__designer">Дизайн d-e-n.ru</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
